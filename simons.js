@@ -20,22 +20,22 @@ document.addEventListener("keydown", function () {
 });
 
 
-//white color
+
 function gameFlash(btn) {
     btn.classList.add("flash");
 
 
-    //setting time to flash 
+    
     setTimeout(function() {
         btn.classList.remove("flash");
     }, 250);
 }
 
 
-//green flash
+
 function userFlash(btn) {
     btn.classList.add("userFlash");
-    //setting time to flash 
+     
     setTimeout(function() {
         btn.classList.remove("userFlash");
     }, 250);
@@ -47,12 +47,12 @@ function levelUp() {
     h2.innerText = `Level ${level}`;
 
 
-    //choose random button
+    
     let randomIdx = Math.floor(Math.random() * btns.length);
     let randomColor = btns[randomIdx];
     let randomBtn = document.querySelector(`.${randomColor}`);
 
-    //pushing random color --> gameSeq
+    
     gameSeq.push(randomColor);
     console.log(gameSeq);
     gameFlash(randomBtn);
