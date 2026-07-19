@@ -54,36 +54,55 @@ h2{
 .btn{
     width:170px;
     height:170px;
-    margin:12px;
-    border-radius:25px;
-    border:5px solid rgba(255,255,255,.4);
+    margin:14px;
+    border-radius:28px;
     cursor:pointer;
-    transition:.25s ease;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+    border:4px solid rgba(255,255,255,.6);
+
+    transition:all .25s ease;
+
+    box-shadow:
+        inset 0 4px 8px rgba(255,255,255,.45),
+        0 10px 25px rgba(0,0,0,.30);
+
+    position:relative;
+
+    overflow:hidden;
 }
 
 .btn:hover{
-    transform:translateY(-8px) scale(1.04);
+
+    transform:
+        translateY(-10px)
+        scale(1.05);
+
+    box-shadow:
+        inset 0 4px 8px rgba(255,255,255,.4),
+        0 20px 35px rgba(0,0,0,.35);
+
 }
 
 .btn:active{
-    transform:scale(.95);
+
+    transform:scale(.96);
+
 }
 
 .red{
-    background:#ff6b6b;
+    background:linear-gradient(145deg,#ff8c8c,#ff4d4d);
 }
 
 .yellow{
-    background:#ffd43b;
+    background:linear-gradient(145deg,#ffe66d,#f7c948);
 }
 
 .green{
-    background:#69db7c;
+    background:linear-gradient(145deg,#7bed9f,#2ed573);
 }
 
 .purple{
-    background:#845ef7;
+    background:linear-gradient(145deg,#9775fa,#6c5ce7);
 }
 
 .flash{
@@ -134,3 +153,4 @@ h2{
     }
 
 }
+
