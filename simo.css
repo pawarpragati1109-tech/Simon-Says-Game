@@ -106,16 +106,23 @@ h2{
 }
 
 .flash{
-    background:white;
-    box-shadow:
-        0 0 25px white,
-        0 0 50px white;
-}
 
-.userFlash{
-    background:#00ff88;
+    filter:brightness(180%);
+
     box-shadow:
-        0 0 25px #00ff88;
+        0 0 20px white,
+        0 0 50px white,
+        0 0 90px white;
+
+}
+.userFlash{
+
+    filter:brightness(150%);
+
+    box-shadow:
+        0 0 20px #00ff88,
+        0 0 50px #00ff88;
+
 }
 
 @keyframes fadeIn{
